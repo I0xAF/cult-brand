@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+  <title>Cult Brand | Mobile Version</title>
+</head>
+<body>
+  <header class="container">
+    <div class="title-container">
+      <h2 class="header-title">Cult_brand</h2>
+      <svg class="search-icon" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M16.622 17.7054L21.6667 22.75" stroke="#6F6F6F"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9167 19.5C16.1048 19.5 19.5 16.1049 19.5 11.9167C19.5 7.72855 16.1048 4.33337 11.9167 4.33337C7.7285 4.33337 4.33333 7.72855 4.33333 11.9167C4.33333 16.1049 7.7285 19.5 11.9167 19.5Z" stroke="#6F6F6F"/>
+      </svg>
+    </div>
+    <div class="header-stock">
+      <h6 class="stock-content">акция 1+1=3 при первой покупке</h6>
+      <a class="stock-close" onclick="closeStock(event)" href="#">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M11.7712 11.7712L4.22874 4.22873" stroke="#343333"/>
+          <path d="M11.7713 4.22873L4.22878 11.7712" stroke="#343333"/>
+        </svg>
+      </a>       
+    </div>
+    <nav class="nav-container">
+      <ul class="tabs-container">
+        <li class="tab-item">
+          <a href="#">Для неё</a>
+        </li>
+        <li class="tab-item t-selected">
+          <a href="#">Для него</a>
+        </li>
+        <li class="tab-item">
+          <a href="#">Новинки</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <div class="main-banner no-select">
+      <h5 class="comfort">Комфорт</h5>
+      <h5 class="simplicity stroke-text">В простоте</h5>
+    </div>
+    <div class="card-items">
+      <div class="card-items-wrapper">
+        <div class="title-next">
+          <h5 class="title">Новинки</h5>
+          <a onclick="slideRight(event, '#arrCB')" class="next" href="#"><img src="./assets/icons/right.png" alt=""></a>
+        </div>
+        <div id="arrCB" class="card-box">
+          <div class="card">
+            <img class="item-image" src="./assets/photos/card-photo.png" alt="">
+            <img class="like-image" src="./assets/icons/heart.png" alt="">
+            <div class="info">
+              <h6 class="title">Костюм с укороченым с...</h6>
+              <div class="price-preorder">
+                <p class="price">11 500 руб.</p>
+                <a class="pre-order" href="#">Предзаказ</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img class="item-image" src="./assets/photos/card-photo.png" alt="">
+            <img class="like-image" src="./assets/icons/heart.png" alt="">
+            <div class="info">
+              <h6 class="title">Костюм с укороченым с...</h6>
+              <div class="price-preorder">
+                <p class="price">11 500 руб.</p>
+                <a class="pre-order" href="#">Предзаказ</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img class="item-image" src="./assets/photos/card-photo.png" alt="">
+            <img class="like-image" src="./assets/icons/heart.png" alt="">
+            <div class="info">
+              <h6 class="title">Костюм с укороченым с...</h6>
+              <div class="price-preorder">
+                <p class="price">11 500 руб.</p>
+                <a class="pre-order" href="#">Предзаказ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="video-banner">
+      <h5 class="cult">CULT</h5>
+    </div>
+    <div class="minor-banner no-select">
+      <footer class="blur-footer">
+        <div class="content">
+          <h2 class="unique">Уникальный</h2>
+          <hr>
+          <h2 class="style stroke-text">Стиль</h2>
+        </div>
+      </footer>
+    </div>
+    <!-- Хиты продаж -->
+    <div class="card-items">
+      <div class="card-items-wrapper">
+        <div class="title-next">
+          <h5 class="title">Хиты продаж</h5>
+          <a onclick="slideRight(event, '#arrCB2')" class="next" href="#"><img src="./assets/icons/right.png" alt=""></a>
+        </div>
+        <div id="arrCB2" class="card-box">
+          <div class="card">
+            <img class="item-image" src="./assets/photos/card-photo.png" alt="">
+            <img class="like-image" src="./assets/icons/heart.png" alt="">
+            <div class="info">
+              <h6 class="title">Костюм с укороченым с...</h6>
+              <div class="price-preorder">
+                <p class="price">11 500 руб.</p>
+                <a class="pre-order" href="#">Предзаказ</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img class="item-image" src="./assets/photos/card-photo.png" alt="">
+            <img class="like-image" src="./assets/icons/heart.png" alt="">
+            <div class="info">
+              <h6 class="title">Костюм с укороченым с...</h6>
+              <div class="price-preorder">
+                <p class="price">11 500 руб.</p>
+                <a class="pre-order" href="#">Предзаказ</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img class="item-image" src="./assets/photos/card-photo.png" alt="">
+            <img class="like-image" src="./assets/icons/heart.png" alt="">
+            <div class="info">
+              <h6 class="title">Костюм с укороченым с...</h6>
+              <div class="price-preorder">
+                <p class="price">11 500 руб.</p>
+                <a class="pre-order" href="#">Предзаказ</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Instagram --> 
+    <div class="insta">
+      <h5 class="insta-title">Присоединяйся к нам @cult_brand</h5>
+      <div style="margin-top: 16px;" class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img class="img-card" src="./assets/photos/slider/img1.jpg" width="180" height="200" alt="">
+            </li>
+            <li class="splide__slide">
+              <img class="img-card" src="./assets/photos/slider/img3.jpg" width="180" height="200" alt="">
+            </li>
+            <li class="splide__slide">
+              <img class="img-card" src="./assets/photos/slider/img2.jpg" width="180" height="240" alt="">
+            </li>
+            <li class="splide__slide">
+              <img class="img-card" src="./assets/photos/slider/img4.jpg" width="180" height="200" alt="">
+            </li>
+            <li class="splide__slide">
+              <img class="img-card" src="./assets/photos/slider/img5.jpg" width="180" height="200" alt="">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="container">
+    <div class="tabbar-container">
+      <nav>
+        <ul>
+          <li class="tabbar-item selected">
+            <a href="#"><img src="./assets/icons/home.png" alt="Home">Главная</a>
+          </li>
+          <li class="tabbar-item">
+            <a href="#"><img src="./assets/icons/favourite.png" alt="Favourite">Избранное</a>
+          </li>
+          <li class="tabbar-item">
+            <a href="#"><img src="./assets/icons/hamburger.png" alt="Catalog">Каталог</a>
+          </li>
+          <li class="tabbar-item">
+            <a href="#"><img src="./assets/icons/bag.png" alt="Cart">Корзина</a>
+          </li>
+          <li class="tabbar-item">
+            <a href="#">
+              <img src="./assets/icons/person.png" alt="Profile">
+              Профиль
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <script>
+    const instaSplider = new Splide('.splide', {
+      focus: 'center',
+      perPage: 2,
+      trimSpace: false,
+      autoHeight: false,
+      fixedHeight: 240,
+      arrows: false,
+      pagination: false,
+      start: 2
+    }).mount()
+    instaSplider.on('move', (next, prev) => {
+      const NextChild = instaSplider.Components.Elements.slides[next].childNodes[1]
+      const PrevChild = instaSplider.Components.Elements.slides[prev].childNodes[1]
+      PrevChild.style.height = '200px'
+      NextChild.style.height = '240px'
+    })
+  </script>
+  <script src="./js/index.js"></script>
+</body>
+</html>
